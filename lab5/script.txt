@@ -1,0 +1,29 @@
+add kek 340 false
+12 12
+VIP
+lalala
+120
+BAR
+loloh
+1 2 3
+kekek
+
+add kek 360 true
+12 12
+VIP
+lalala
+150
+BAR
+loloh
+1 2 3
+kekek
+
+add_if_max lol 400 true
+12 12
+VIP
+lalala
+180
+BAR
+loloh
+1 2 3
+kekek

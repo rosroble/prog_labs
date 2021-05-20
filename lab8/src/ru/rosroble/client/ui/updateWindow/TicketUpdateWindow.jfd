@@ -1,0 +1,322 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3,align center center"
+			"$columnConstraints": "[grow,right][fill][fill][fill][::200,fill][fill][fill][fill][fill][::200,fill][fill][fill][fill][27,fill][grow,left][grow,right][fill][fill][fill][fill][::200,fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][grow,left]"
+			"$rowConstraints": "[][][][][][grow][grow][grow][grow][grow][grow][grow][grow][][][grow][][][]"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 60, 96, 205, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "headerLabel"
+				"text": "Update a Ticket"
+				"font": new java.awt.Font( "Monospaced", 1, 48 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 32 3,align center center,grow 0 0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ticketLabel"
+				"text": "Enter ID and basic ticket params:"
+				"font": &Font0 new java.awt.Font( "JetBrains Mono Medium", 0, 20 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 3 32 1,alignx center,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "idLabel"
+				"text": "ID"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 13 4 2 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "idTextField"
+				"border": &SoftBevelBorder0 new javax.swing.border.SoftBevelBorder( 1, null, null, null, null )
+				"background": &Color0 new java.awt.Color( 83, 73, 176, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 4 2 1,alignx left,growx 0,width 30:70:100,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameLabel"
+				"text": "name"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 5 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ticketNameTextField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 5 5 1,alignx center,growx 0,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "nameCheckbox"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "nameCheckboxMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 14 5"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "xCoordLabel"
+				"text": "X-coord"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 5 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ticketXTextField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 5 5 1,alignx center,growx 0,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "CoordCheckBox"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "CoordCheckBoxMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 25 5 1 2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "priceLabel"
+				"text": "price"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 6 6 3 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ticketPriceTextField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 6 5 1,align center center,grow 0 0,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "priceCheckbox"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "priceCheckboxMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 14 6"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "yCoordLabel"
+				"text": "Y-coord"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 6 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ticketYTextField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 6 5 1,alignx center,growx 0,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "refundableLabel"
+				"text": "refundable"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 7 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "ticketRefComboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "-"
+					addElement( "-" )
+					addElement( "true" )
+					addElement( "false" )
+				}
+				"border": #SoftBevelBorder0
+				"background": new java.awt.Color( 83, 73, 176, 255 )
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 7 5 1,alignx center,growx 0,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "refCheckBox"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "refCheckBoxMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 14 7"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "typeLabel"
+				"text": "Type"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 7 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "ticketTypeComboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "-"
+					addElement( "-" )
+					addElement( "VIP" )
+					addElement( "USUAL" )
+					addElement( "BUDGETARY" )
+					addElement( "CHEAP" )
+				}
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 7 5 1,alignx center,growx 0,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "tTypeCheckBox"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "tTypeCheckBoxMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 25 7"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "venueLabel"
+				"text": "Enter Venue params:"
+				"font": #Font0
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 8 32 1,alignx center,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "venueCheckbox"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "venueCheckboxMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 8 32 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "venueNameLabel"
+				"text": "name"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 9 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "venueNameField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 9 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "townNameLabel"
+				"text": "town name"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 9 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "venueTownNameField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 9 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "capacityLabel"
+				"text": "capacity"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 10 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "venueCapacityField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 10 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "townXlabel"
+				"text": "town X-coord"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 10 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "venueXField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 10 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "streetNameLabel"
+				"text": "street name"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 11 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "venueStreetNameField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 11 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "townYlabel"
+				"text": "town Y-coord"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 11 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "venueYField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 11 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "venueTypeLabel"
+				"text": "Type"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 12 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "venueTypeComboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "-"
+					addElement( "-" )
+					addElement( "PUB" )
+					addElement( "BAR" )
+					addElement( "THEATRE" )
+				}
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 12 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "townZlabel"
+				"text": "town Z-coord"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 15 12 5 1,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "venueZField"
+				"border": #SoftBevelBorder0
+				"background": #Color0
+				"enabled": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 12 5 1,width 100:150:200,height 20:30:60"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backButton"
+				"text": "Back"
+				"background": new java.awt.Color( 168, 37, 75, 255 )
+				"border": new javax.swing.border.SoftBevelBorder( 0, sfield java.awt.Color red, new java.awt.Color( 177, 17, 56, 255 ), new java.awt.Color( 78, 0, 0, 255 ), new java.awt.Color( 136, 18, 5, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "backButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 15 5 1,alignx center,growx 0,width 100:125:175"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "submitButton"
+				"text": "Submit"
+				"background": new java.awt.Color( 35, 118, 31, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "submitButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 20 15 5 1,alignx center,growx 0,width 100:125:175"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 985, 730 )
+		} )
+	}
+}

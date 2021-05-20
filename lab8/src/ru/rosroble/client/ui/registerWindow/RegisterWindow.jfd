@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3,align center center"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][303,fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][40:80:90,grow 23,center][9][3][4][][][][][][]"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 60, 96, 205, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "registerLabel"
+				"text": "Register"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "JetBrains Mono ExtraBold", 0, 48 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 2,align center center,grow 0 0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "loginLabel"
+				"text": "Login"
+				"font": new java.awt.Font( "JetBrains Mono ExtraLight", 0, 18 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "loginField"
+				"background": new java.awt.Color( 69, 95, 201, 255 )
+				"border": &SoftBevelBorder0 new javax.swing.border.SoftBevelBorder( 1, null, null, null, null )
+				"minimumSize": new java.awt.Dimension( 49, 36 )
+				"opaque": false
+				"preferredSize": new java.awt.Dimension( 49, 36 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 6,growx,width 50:150:200,height 15:30:45"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "passwordLabel"
+				"text": "Password"
+				"font": new java.awt.Font( "JetBrains Mono ExtraLight", 0, 18 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 7,width 30:50:100"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField"
+				"background": new java.awt.Color( 69, 95, 201, 255 )
+				"border": #SoftBevelBorder0
+				"alignmentX": 1.0f
+				"alignmentY": 1.0f
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 7,growx,width 50:150:200,height 15:30:45"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+				name: "hSpacer1"
+				"opaque": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 8,growx,width 30:50:70"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "registerButton"
+				"text": "Register"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "registerButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 8,aligny center,grow 100 0,width 100:150:200,height 30:30:50"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+				name: "hSpacer2"
+				"opaque": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 9,growx,width 30:50:70"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backButton"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "backButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 9,aligny center,grow 100 0,width 100:150:200,height 30:30:50"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+				name: "vSpacer1"
+				"opaque": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 11,height 40:80:300"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 790, 490 )
+		} )
+	}
+}

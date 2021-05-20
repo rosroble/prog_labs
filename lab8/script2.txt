@@ -1,0 +1,10 @@
+execute_script script1.txt
+add kek 340 false
+12 12
+VIP
+lalala
+120
+BAR
+loloh
+1 2 3
+kekek

@@ -1,0 +1,6 @@
+package ru.rosroble.common.commands;
+
+public enum CommandType {
+    ADD, AUTH, CLEAR, COUNT_GR_THAN_PRICE, COUNT_LESS_THAN_VENUE, EXECUTE_SCRIPT, HELP, INFO, REMOVE_ANY_BY_RF,
+    REMOVE_BY_ID, REMOVE_LOWER, SHOW, SORT, UPDATE_ID, EXIT
+}

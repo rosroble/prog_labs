@@ -1,0 +1,155 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3,align center center"
+			"$columnConstraints": "[grow,right][fill][fill][fill][fill][fill][::200,fill][fill][fill][fill][::200,fill][fill][fill][fill][27,fill][grow,left][grow,right][fill][fill][::200,fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][grow,left]"
+			"$rowConstraints": "[][][][359,grow][40][grow][grow][grow][grow][][][][][][grow][grow][][][grow][][grow][][][grow][][][]"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 60, 96, 205, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ticketShowcaseLabel"
+				"text": "Ticket Showcase"
+				"font": new java.awt.Font( "Monospaced", 1, 48 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 31 3,align center center,grow 0 0"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "ticketTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "id" )
+						add( "name" )
+						add( "XCoord" )
+						add( "YCoord" )
+						add( "price" )
+						add( "refundable" )
+						add( "TicketType" )
+						add( "venueId" )
+						add( "venueName" )
+						add( "venueCapacity" )
+						add( "venueType" )
+						add( "venueStreet" )
+						add( "VXCoord" )
+						add( "VYCoord" )
+						add( "VZCoord" )
+						add( "townName" )
+						add( "owner" )
+					}, new java.util.Vector {
+						add( class java.lang.Long )
+						add( class java.lang.String )
+						add( class java.lang.Float )
+						add( class java.lang.Long )
+						add( class java.lang.Double )
+						add( class java.lang.Boolean )
+						add( class java.lang.String )
+						add( class java.lang.Long )
+						add( class java.lang.String )
+						add( class java.lang.Long )
+						add( class java.lang.String )
+						add( class java.lang.String )
+						add( class java.lang.Long )
+						add( class java.lang.Integer )
+						add( class java.lang.Long )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( false )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( false )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( true )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"showHorizontalLines": false
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 3 31 13,aligny center,grow 100 0,hmax 2000"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "filterKey"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "id"
+					addElement( "id" )
+					addElement( "name" )
+					addElement( "XCoord" )
+					addElement( "YCoord" )
+					addElement( "price" )
+					addElement( "refundable" )
+					addElement( "TicketType" )
+					addElement( "venueId" )
+					addElement( "venueName" )
+					addElement( "venueCapacity" )
+					addElement( "venueType" )
+					addElement( "venueStreet" )
+					addElement( "VXCoord" )
+					addElement( "VYCoord" )
+					addElement( "VZCoord" )
+					addElement( "townName" )
+					addElement( "owner" )
+				}
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 5 16 6 8,alignx right,growx 0"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backButton"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "backButtonMouseReleased", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 12 16 8 8,alignx center,growx 0,width 100:150:200"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "filterText"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 23 16 6 8,growx,width 100:150:200"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "filterOperation"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "="
+					addElement( "=" )
+					addElement( ">" )
+					addElement( "<" )
+				}
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 16 3 8,alignx center,growx 0,width 30:60:90"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 215, 400 )
+			"size": new java.awt.Dimension( 675, 489 )
+		} )
+	}
+}
